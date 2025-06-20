@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #c9c4b9;
+      background: #bbb7b7;
       margin: 0;
       padding: 20px;
       display: flex;
@@ -42,7 +42,7 @@
       resize: vertical;
     }
     textarea {
-      height: 100px;
+      height: 70px;
     }
     .rating {
       display: flex;
@@ -69,7 +69,7 @@
     }
 
     .form {
-        background-color: #C6B17D;
+        background-color: #C6B07D;
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -100,11 +100,168 @@
         <option value="2">Fair</option>
         <option value="1">Poor</option>
       </select>
+      
+      <label>HOW SEAMLESS WAS THE ACCOUNT OPENING PROCESS</label>
+      <textarea name="account_opening"></textarea>
 
-      <label for="comments">Comments:</label>
-      <textarea id="comments" name="comments" placeholder="Enter your feedback..."></textarea>
+      <label for="notification">DID YOU GET A NOTIICATION WHEN YOUR ACCOUNT WAS OPENED?</label>
+      <select id="notification" name="NOTIICATION" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>
+      </select>
 
+      <label for="recieved">IF YES KINDLY INDICATE IF IT WAS RECIEVED VIA SMS OR EMAIL</label>
+      <select id="recieved" name="RECIEVED" required>
+        <option value="">Choose...</option>
+        <option value="2">SMS</option>
+        <option value="1">EMAIL</option>
+      </select>
+
+      <label>IF NO KINDLY INDICATE IF A PREFERRED PHONE NUMBER AND EMAIL WAS PROVIDED</label>
+      <textarea name="PREFERRED"></textarea>
+
+      <label for="agreement">WAS YOUR NAME AGREEMENT IN THE CORRECT ORDER?</label>
+      <select id="agreement" name="AGREEMENT" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>
+      </select>
+
+      <label for="transaction">WERE YOU ABLE TO DO ANY TRANSACTION ON YOUR ACCOUNT? IF YES, PLEASE INDICATE TRANSACTION TYPE</label>
+       
+      <label><input type="checkbox">DEPOSITS </label>
+      <label><input type="checkbox">WITHDRAWALS </label>
+      <label><input type="checkbox">TRANSFERS </label>
+      <label><input type="checkbox">BILLS PAYMENTS </label>
+      <label><input type="checkbox">LOANS AND CREDITS </label>
+      <label><input type="checkbox">FOREIGN EXCHANGE TRANSACTION </label>
+      <label><input type="checkbox">FEES AND SERVICES CHARGES </label>
+      <label><input type="checkbox">INTEREST PAYMENT </label>
+
+      <label for="transfers">WERE INTER AND INTRA BANK TRANSFERS SEEMLESS?</label>
+      <select id="transfers" name="TRANSFERS" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>
+      </select>
+
+       <label for="account">WERE YOU ABLE TO CARRY OUT OWN ACCOUNT TRANSFERS? IF YES, WERE YOU CHAREGED FOR THIS SERVICE?</label>
+      <select id="account" name="ACCOUNT" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>
+      </select>
+
+      <textarea name="TRANSFERS"></textarea> 
+
+      <label for="observation">ARE THERE ANY OBSERVATION FROM THE TRANSACTION /SERVICE TO BE MODIFIED</label>
+      <select id="observation" name="OBSERVATION" required>
+        <option value="">Choose...</option>
+        <option value="3">YES</option>
+        <option value="2">NO</option>
+        <option value="1">MAYBE</option>
+      </select>
+      
+      <label for="number">WAS YOUR ACCOUNT NUMBER MASKED IN YOUR TRANSACTION ALERT</label>
+      <select id="number" name="NUMBER" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>      
+      </select>
+
+      <label for="captured">WAS YOUR TRANSACTION DESCRIPTION CORRECTLY CAPTURED IN THE TRANSACTION ALERT?</label>
+      <select id="captured" name="CAPTURED" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>      
+      </select>
+
+      <label for="balance">DID YOU GET YOUR ACCOUNT BALANCE IN THE CORRECT CURRENCY OF THE TRANSACTION?</label>
+      <select id="balance" name="BALANCE" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>      
+      </select>
+
+      <label for="position">DOES YOUR CURRENT BALANCE REFLECT THE TRUE POSITION OF YOUR ACCOUNT OR ARE THERE DISCREPANCIES IN YOUR BALANCES.</label>
+      <select id="position" name="POSITION" required>
+        <option value="">Choose...</option>
+        <option value="2">YES IT DOES</option>
+        <option value="1">NO IT DOESN'T</option>      
+      </select>
+
+
+       <label for="charges">AFTER CONSUMATING A TRANSACTION, WERE ALL THE CHARGES CAPTURED IN YOUR TRANSACTION ALERT?</label>
+      <select id="charges" name="CHARGES" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>      
+      </select>
+
+      <label for="overdraw">WERE YOU ABLE TO PERFORM A TRANSACTION HIGHER THAN YOUR CURRENT BALANCE(OVERDRAW YOUR ACCOUNT)</label>
+      <select id="overdraw" name="OVERDRAW" required>
+        <option value="">Choose...</option>
+        <option value="2">YES</option>
+        <option value="1">NO</option>      
+      </select>
+
+       <label>PROVIDE ANY COMMENTS TO ANY OTHER OUTCOME NOT MENTIONED OR RECOMMENDATION</label>
+      <textarea name="comments"></textarea>
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+      
+   
+      
+
+
+     
+
+
+
+
+      
+
+      
+
+      
+     
       <button type="submit">Submit Feedback</button>
+     </select>
+      
+    </select>
     </form>
 
 
